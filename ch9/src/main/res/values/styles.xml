@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Mystyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:text">안녕하세요</item>
+        <item name="android:textColor">#0000FF</item>
+        <item name="android:textSize">40sp</item>
+    </style>
+</resources>

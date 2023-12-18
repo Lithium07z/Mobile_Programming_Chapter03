@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".example4.Example4Activity"
+    android:orientation="vertical">
+
+<!--    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="스마트리드, http://www.smartlead.hallym.ac.kr, 전화번호: 033-248-1334, 이메일: rlawnsghdudw@naver.com"
+        android:textSize="30sp"
+        android:autoLink="phone|web|email"/>-->
+
+<!--    <TextView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="@string/long_text"-->
+<!--        android:textSize="40sp"-->
+<!--        android:singleLine="true"-->
+<!--        android:ellipsize="middle"/>-->
+
+ <!--   <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/hallym_campus_map"
+        android:maxWidth="100dp"
+        android:maxHeight="100dp"
+        android:adjustViewBounds="true"
+        android:background="#0000ff"/>-->
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="phone|textPassword"/>
+
+
+</LinearLayout>

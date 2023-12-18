@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#28353b">
+
+    <ImageView
+        android:id="@+id/messengerPlay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_play"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="35dp"
+        android:clickable="true"/>
+
+    <TextView
+        android:id="@+id/messengerTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/messengerPlay"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="메신저로 플레이"
+        android:textColor="@android:color/white"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/messengerStop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_stop"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="35dp"
+        android:layout_marginRight="35dp"
+        android:clickable="true"/>
+
+    <ProgressBar
+        android:id="@+id/messengerProgress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_below="@id/messengerPlay"
+        android:layout_margin = "15dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@drawable/background" />
+
+    <ImageView
+        android:id="@+id/aidlPlay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_play"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="35dp"
+        android:layout_marginLeft="35dp"
+        android:clickable="true"/>
+
+    <TextView
+        android:id="@+id/aidlTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/aidlPlay"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="AIDL로 플레이"
+        android:textColor="@android:color/white"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/aidlStop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_stop"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="35dp"
+        android:layout_marginRight="35dp"
+        android:clickable="true"/>
+
+    <ProgressBar
+        android:id="@+id/aidlProgress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_above="@id/aidlTitle"
+        android:layout_margin="15dp"/>
+</RelativeLayout>

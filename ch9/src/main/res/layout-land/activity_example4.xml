@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:columnCount="2">
+
+        <ImageView
+            android:layout_row="0"
+            android:layout_column="0"
+            android:layout_rowSpan="2"
+            android:src="@drawable/intro"/>
+
+        <TextView
+            android:layout_width="450dp"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:text="@string/intro_main"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:layout_width="450dp"
+            android:layout_row="1"
+            android:layout_column="1"
+            android:text="@string/intro_detail"
+            android:gravity="center"
+            android:layout_marginTop="20dp"/>
+    </GridLayout>
+
+    <TextView
+        android:id="@+id/delayText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="@string/intro_delay"
+        android:gravity="center"
+        android:layout_marginBottom="20dp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/delayText"
+        android:text="@string/intro_button"
+        android:background="@drawable/custom_box"
+        android:textColor="#FFFFFF"/>
+
+</RelativeLayout>

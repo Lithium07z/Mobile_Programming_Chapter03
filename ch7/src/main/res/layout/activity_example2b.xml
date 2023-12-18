@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".test2.Example2bActivity">
+
+    <Button
+        android:id="@+id/baseBtn"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerInParent="true"
+        android:text="기준버튼"
+        android:textSize="20sp"/>
+
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1번"
+        android:layout_toLeftOf="@+id/baseBtn"
+        android:layout_alignTop="@+id/baseBtn"/>
+
+    <Button
+        android:id="@+id/btn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2번"
+        android:layout_toLeftOf="@+id/baseBtn"
+        android:layout_below="@+id/btn1"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3번"
+        android:layout_toLeftOf="@+id/baseBtn"
+        android:layout_below="@+id/btn2"/>
+</RelativeLayout>

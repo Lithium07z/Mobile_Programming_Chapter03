@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".test4.Example4Activity"
+    android:padding="20dp">
+
+    <ImageView
+        android:id="@+id/baseImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/intro"
+        android:layout_centerHorizontal="true" />
+    
+    <TextView
+        android:id="@+id/mainText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/baseImage"
+        android:layout_marginTop="20dp"
+        android:text="@string/intro_main"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+    
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mainText"
+        android:layout_marginTop="20dp"
+        android:text="@string/intro_detail"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/delayText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="@string/intro_delay"
+        android:gravity="center"/>
+    
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/delayText"
+        android:text="@string/intro_button"
+        android:background="@drawable/custom_box"
+        android:textColor="#FFFFFF"/>
+</RelativeLayout>
