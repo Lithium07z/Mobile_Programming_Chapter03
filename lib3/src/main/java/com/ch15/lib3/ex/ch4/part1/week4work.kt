@@ -1,7 +1,5 @@
 package com.ch15.lib3.ex.ch4.part1
 
-import com.example.lib3.ex.ch3.part1.data
-
 open class parent() {
     var arr: Array<Int> = Array(3, {0})
 
